@@ -1,0 +1,234 @@
+/* Apply a black background to the image container */
+/* .image-container {
+    text-align: center;
+} */
+
+/* Style the image within the container */
+
+
+/* Style the navigation bar */
+
+/* Style the section content */
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+
+    margin-top: 50px;
+
+    /* border-radius: 20px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: rgb(238, 230, 162);
+    background-color: rgba(67, 17, 125, 0.9);
+}
+
+/* Style the about section */
+.about-section {
+    flex: 1;
+    max-width: 600px;
+    margin-left: 15px;
+}
+
+/* Style the about image */
+.about-image {
+    flex: 1;
+    margin-left: 5px;
+    margin-right: 15px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Style the button */
+
+
+/* Add styles for the extended section */
+.extended-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    color: rgb(204, 37, 37);
+    /* Set background color for contrast */
+    margin-top: 20px;
+    /* Add some space between sections */
+    /* border-radius: 20px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.extended-image {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.extended-image img {
+    width: 80%;
+    height: auto;
+    max-height: 800px;
+    /* Set a maximum height for the image */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.extended-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+/* Additional styles for paragraphs in the extended section */
+.extended-content p {
+    margin-bottom: 15px;
+}
+
+.extended-section2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: rgba(67, 17, 125, 0.9);
+    /* Set background color for contrast */
+    margin-top: 20px;
+    /* Add some space between sections */
+    /* border-radius: 20px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: rgb(238, 230, 162);
+}
+
+.extended-content2 {
+    flex: 1;
+    /* Change to flex: 1 */
+    max-width: 600px;
+}
+
+.extended-image2 {
+    flex: 1;
+    /* Change to flex: 1 */
+    margin-left: 20px;
+    /* Change to margin-left */
+}
+
+.extended-image2 img {
+    width: 80%;
+    height: auto;
+    max-height: 900px;
+    /* Set a maximum height for the image */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styles for paragraphs in the extended section */
+.extended-content2 p {
+    margin-bottom: 15px;
+}
+
+
+
+b {
+    font-weight: bolder;
+    font-size: 40px;
+    color: rgb(204, 37, 37);
+
+}
+
+
+
+#gamePopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+#gamePopup input {
+    width: 100%;
+    /* Adjust the width as needed */
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+#gamePopup button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.play_button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 100px;
+    border-radius: 20px;
+
+}
+
+.play_button:hover {
+    background-color: #45a049;
+
+}
+
+
+
+.Fun {
+    max-width: 500px;
+    height: 300px;
+    margin-left: 900px;
+    background-image: url('../image/game.jpeg');
+    border-radius: 20px;
+    margin-top: none;
+    padding: 20px;
+    color: rgb(172, 13, 13);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+
+
+}
+
+
+
+.Fun h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+
+}
+
+.Fun p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.last-section {
+
+    background-image: url("../image/game-bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+    color: rgb(238, 230, 162);
+    /* border-radius: 20px; */
+}

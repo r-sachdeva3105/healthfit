@@ -2,12 +2,15 @@
 
 body::before {
     content: '';
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 120%;
-    height: 120%;
-    background-image: url('bgc_bmi.jpg');
+    width: 100%;
+    /* Use 100% for the width to cover the entire viewport */
+    height: 100vh;
+    /* Use 100vh to cover the entire viewport height */
+    background-image: url('/image/bmi-bg.jpeg');
+    /* Adjust the image path as needed */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,17 +21,19 @@ body::before {
 .bmi-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 150px;
+    margin-top: 60px;
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 130px;
+
 }
 
 .calculator,
 .diet_plan {
-    background-color: rgba(243, 158, 193, 0.7);
+    background-color: rgba(254, 248, 220, 0.591);
     padding: 10px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgb(0, 0, 0, );
     text-align: center;
     z-index: 1;
     max-width: 800px;
@@ -39,9 +44,31 @@ body::before {
     max-width: 700px;
 }
 
+
 .diet_plan {
     margin-left: 10px;
 }
+
+.diet_plan {
+    background-color: rgba(254, 248, 220, 0.591);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    /* Align text to the left */
+    z-index: 1;
+    max-width: 660px;
+}
+
+
+
+#specialDietPlan {
+    text-align: left;
+    /* Align text to the left */
+
+}
+
+
 
 label {
     font-weight: bold;
@@ -67,3 +94,28 @@ button {
     margin-top: 20px;
     font-weight: bold;
 }
+
+/* nav {
+    background-color: transparent;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 300px;
+    transition: background-color 0.3s ease;
+} */

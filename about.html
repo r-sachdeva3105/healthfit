@@ -29,6 +29,7 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="css/main2.css">
 </head>
 
 <body class="sub_page about_page">
@@ -57,64 +58,120 @@
 
   <!-- about section -->
 
+  <!-- about section -->
+
   <section class="about_section layout_padding">
 
 
+    <div class="about-section">
+      <h2>About HealthFit</h2>
 
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          About HeathFit
-        </h2>
-      </div>
+      <br />
 
-      <div class="box">
-        <div class="img-box">
+      <p>Welcome to HealthFit, where we are dedicated to guiding individuals on their journey to a healthier and happier
+        life. At HealthFit, we believe in the power of holistic well-being, addressing not just physical fitness but
+        also nutrition and mental health.</p>
+      <br />
+      <br />
+      <br />
+      <h2>What We Offer</h2>
+      <br />
+      <ul>
+        <li>Personalized Fitness Plans</li>
+        <li>Nutrition Guidance</li>
+        <li>Mental Wellness Support</li>
+        <li>Community and Accountability</li>
+      </ul>
+    </div>
 
-          <img src="images/happy run.jpg" alt="">
-
-
-        </div>
-
-        <div class="detail-box">
-          <p>
-            <b>"</b>What sets Health Fit apart is our commitment to fostering
-            a supportive and inclusive community. It's not just about reaching
-            your fitness goals; it's about enjoying the process with like-minded
-            individuals who share your passion for a healthier lifestyle. Our platform is a
-            space where you can connect, learn, and grow together.
-          </p>
-
-
-          <p>Embrace a transformative experience with Health Fit, where health meets happiness.
-            Join us on this exciting adventure, and let's embark on a journey to unlock your full potential.
-            Your well-being is our priority, and we are thrilled to be part of your path to a more vibrant and
-            fulfilling life. Welcome to Health Fit , where your journey to a healthier you begins!
-          </p>
-          <br>
+    <div class="about-image">
+      <!-- Add your image source here -->
+      <img src="image/about1.jpeg" alt="About Image 1">
+    </div>
 
 
-          <p>Our Commitment to Your Well-Being:
-            At HealthFit, we are dedicated to providing a holistic approach to health and wellness. Our mission
-            is to empower individuals on their journey to a healthier lifestyle. Whether you're a fitness enthusiast
-            or just starting, we believe that everyone deserves the opportunity to achieve their well-being goals.
-            We are committed to fostering a supportive and inclusive community where members can connect, learn,
-            and thrive together <b>"</b>
+  </section>
+  <section class="extended-section">
+    <div class="extended-image">
+      <!-- Add your image source here -->
+      <img src="image/about2.jpeg" alt="Extended Section Image">
+    </div>
 
-          </p>
+    <div class="extended-content">
+      <h2>Mindful Wellness: Elevate Your Mental Health with HealthFit's Holistic Services</h2>
+      <br />
+      <br />
+      <p><b>"</b>At HealthFit, we understand that true well-being goes beyond physical fitness; it encompasses mental
+        health as well.</p>
 
-          <br>
-          <br>
-
-
-
-        </div>
-      </div>
+      <p> Our mental health services are designed to support and enhance your overall wellness journey. We offer a range
+        of personalized mental health programs, including counseling, mindfulness sessions, and stress management
+        workshops.</p>
+      <p>Through a holistic approach, we integrate mental health strategies into your fitness and health routine,
+        fostering a balanced and harmonious lifestyle. Take the next step towards a healthier mind and body with
+        HealthFit's comprehensive mental health services. Your well-being is our priority.<b>"</b></p>
     </div>
   </section>
+
+  </section>
+
+  <section class="extended-section2">
+    <div class="extended-image2">
+      <!-- Add your image source here -->
+      <img src="image/about3.jpeg" alt="Extended Section Image">
+    </div>
+
+    <div class="extended-content2">
+      <h2>Embrace Happy Living</h2>
+      <br />
+      <br />
+      <p>At HealthFit, we understand that true well-being goes beyond physical health;
+        it's about finding a harmonious balance between mind, body, and spirit.</p>
+
+      <p> We advocate for a holistic approach to health that nurtures not just your body, but also your joy and
+        fulfillment.</p>
+      <p>Stress less, live more. At HealthFit, we believe in the power of mindfulness to cultivate a
+        positive mindset. Learn to appreciate the present moment,
+        manage stress effectively, and unlock the secrets to a calmer, happier you.</p>
+
+      <p>HealthFit is more than a fitness center; it's a community that celebrates victories,
+        big and small. Connect with like-minded individuals,
+        share experiences, and draw inspiration from the collective pursuit of happiness.</p>
+    </div>
+  </section>
+
+  </section>
   <!-- end about section -->
+  <br>
+  <br>
+  <br>
+  <div class="last-section">
+
+    <div class="Fun">
+      <h1>Fun Activity!</h1>
+      <br>
+      <br>
+
+
+
+      <div id="gamePopup">
+        <input type="number" id="userChoice" placeholder="Enter a number from 1 to 5">
+        <button onclick="startGame()">Play</button>
+      </div>
+
+      <!-- Trigger the game pop-up -->
+      <button onclick="showGamePopup()" class="play_button">Exercise of the Day</button>
+      <br>
+      <br>
+
+    </div>
+  </div>
+
 
   <!-- info section -->
+  <br>
+  <br>
+  <br>
 
   <section class="info_section layout_padding2-top">
     <div class="container">
@@ -212,10 +269,7 @@
               <img src="images/call-white.png" alt="">
               <span>+1 647-822-6861</span>
             </a>
-            <a href="">
-              <img src="images/mail-white.png" alt="">
-              <span> HealthFit@ByteBuilders.com</span>
-            </a>
+
           </div>
           <div class="info_social">
             <div>
@@ -238,36 +292,30 @@
                 <img src="images/instagram.png" alt="">
               </a>
             </div>
+
           </div>
         </div>
       </div>
+      <p>
+        &copy; 2023 Bytle Builders
+      </p>
     </div>
   </section>
 
   <!-- end info section -->
-
   <button id="chat" type="button" onclick="location.href='/chatbot.html'"><i
       class="fa-regular fa-comments"></i></i></button>
-  <!-- footer section -->
-  <section class="container-fluid footer_section ">
-    <p>
-      &copy; 2023 Bytle Builders
-    </p>
-  </section>
 
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
 
-  <script>
-    function openNav() {
-      document.getElementById("myNav").classList.toggle("menu_width");
-      document
-        .querySelector(".custom_menu-btn")
-        .classList.toggle("menu_btn-style");
-    }
-  </script>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="js/about.js"></script>
   <script src="https://kit.fontawesome.com/e8208fd558.js" crossorigin="anonymous"></script>
   <script src="scripts/script.js"></script>
+
+
+
 </body>
 
 </html>
