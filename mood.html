@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="css/moodstyle.css">
+</head>
+
+<body>
+    <header>
+        <p id="title">healthfit.</p>
+        <span class="spacer"></span>
+        <nav>
+            <ul class="menu" id="list">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="service.html">SERVICES</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <button class="login" type="button"><a href="login.html">logout</a></button>
+        <button id="menuBtn" type="button"><i class="fa-solid fa-bars"></i></button>
+    </header>
+    <!-- <div id="background-image"></div> -->
+
+    <div id="overlay">
+        <div id="mood-container">
+            <h1>Mood Tracker</h1>
+            <form id="mood-form">
+                <label for="mood">Select your mood:</label>
+                <select id="mood">
+                    <option value="happy">Happy</option>
+                    <option value="sad">Sad</option>
+                    <option value="excited">Excited</option>
+                    <option value="calm">Calm</option>
+                    <option value="angry">Angry</option>
+                    <option value="stressed">Stressed</option>
+                </select>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+
+                <label for="time">Time:</label>
+                <input type="time" id="time" required>
+
+                <label for="description">Description:</label>
+                <input type="text" id="description">
+
+                <button type="button" onclick="trackMood()">Track Mood</button>
+                <p id="selected-mood"></p>
+            </form>
+        </div>
+
+        <div id="chart-container">
+            <canvas id="mood-chart" width="600" height="300"></canvas>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

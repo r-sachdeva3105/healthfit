@@ -1,0 +1,71 @@
+.card p {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.card li {
+    margin: 10px 0;
+    text-decoration: underline;
+    font-size: 16px;
+    font-style: italic;
+}
+
+#addComment {
+    text-align: center;
+}
+
+#comment {
+    width: 80%;
+    outline: 1px solid #0598ec;
+    font-size: 15px;
+    color: #373738;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #224786;
+    border-radius: 20px;
+}
+
+#comment+button {
+    border: none;
+    border-radius: 20px;
+    color: aliceblue;
+    background-color: #224786;
+    padding: 13px 30px;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    margin-left: -50px;
+
+    &:hover {
+        background-color: #0598ec;
+    }
+}
+
+#error {
+    color: red;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+#comments {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.commentBox {
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.commentBox button {
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+}

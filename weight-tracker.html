@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/fevicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/weight-tracker.css">
+    <title>HealthFit | Weight Tracker</title>
+</head>
+
+<body>
+    <header>
+        <p id="title">healthfit.</p>
+        <span class="spacer"></span>
+        <nav>
+            <ul class="menu" id="list">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="service.html">SERVICES</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <button class="login" type="button"><a href="login.html">logout</a></button>
+        <button id="menuBtn" type="button"><i class="fa-solid fa-bars"></i></button>
+    </header>
+    <main>
+        <div class="table">
+            <h1>Weight Log</h1>
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Weight</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+        <div class="chart">
+            <canvas id="weightChart"></canvas>
+        </div>
+        <button id="add" type="button"><i class="fa-solid fa-plus"></i></button>
+        <button id="chat" type="button" onclick="location.href='/chatbot.html'"><i
+                class="fa-regular fa-comments"></i></i></button>
+    </main>
+    <dialog id="dialogBox">
+        <form id="weightForm" method="dialog">
+            <h1>Record your weight</h1>
+            <div>
+                <label for="weight">Enter weight:</label>
+                <input type="number" name="weight" id="weight">
+            </div>
+            <span id="error1"></span>
+            <div>
+                <label for="date">Enter date:</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <span id="error2"></span>
+            <div class="buttons">
+                <button id="update" type="submit">Update</button>
+                <button id="cancel" type="button">Cancel</button>
+            </div>
+        </form>
+    </dialog>
+    <footer>
+        <h3>HealthFit &copy; 2023</h3>
+    </footer>
+    <script src="https://kit.fontawesome.com/e8208fd558.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/weight-tracker.js"></script>
+</body>
+
+</html>

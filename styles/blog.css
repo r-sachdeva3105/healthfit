@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    color: #2E3050;
+}
+
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background-image: url(/assets/healthLifestyle.jpg);
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.header h2 {
+    background-image: url(/assets/login-bg.jpg);
+    /* background-size: 100%; */
+    background-position: top;
+    width: max-content;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Titan One', sans-serif;
+    font-size: 60px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.leftcolumn {
+    float: left;
+    width: 55%;
+    padding: 0 10px 20px 20px;
+}
+
+
+h2 a {
+    color: #2E3050;
+}
+
+img.blog {
+    width: 100%;
+}
+
+img.logo {
+    width: 100%;
+}
+
+h5 {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding: 0 20px 20px 10px;
+}
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card h1 {
+    font-size: 40px;
+}
+
+.card h2 {
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+.card p {
+    text-align: justify;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div.links {
+    display: flex;
+    align-items: center;
+
+    .fa-brands {
+        margin: 10px 30px 10px 0;
+        color: #2E3050;
+        font-size: 30px;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            color: cornflowerblue;
+            transform: translateY(-4px);
+        }
+    }
+
+    .fa-solid {
+        margin: 10px 20px 10px 0;
+        color: #2E3050;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+
+    .row {
+        display: block;
+    }
+}

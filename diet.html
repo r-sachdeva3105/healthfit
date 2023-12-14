@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Diet</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/diet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <p id="title">healthfit.</p>
+        <span class="spacer"></span>
+        <nav>
+            <ul class="menu" id="list">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="service.html">SERVICES</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <button class="login" type="button"><a href="login.html">logout</a></button>
+        <button id="menuBtn" type="button"><i class="fa-solid fa-bars"></i></button>
+    </header>
+
+    <section id="Home">
+
+
+        <div class="main">
+
+            <div class="men_text">
+                <h1>
+                    Vegetarian
+                    <span> Dinners </span> <br>High in Fiber
+                </h1>
+            </div>
+
+            <div class="main_image">
+                <img src="image/maxresdefault.jpg">
+            </div>
+
+        </div>
+
+        <p>
+            Fiber-rich ingredients like barley, lentils and sweet potato make these meals a filling and satisfying
+            option for dinner. Each dish has 6 grams of fiber per serving and aligns with a vegetarian eating pattern.
+            Plus, you can have them on the table in just three steps or less for something that’s equally as easy as it
+            is delicious. Mouthwatering recipes like our White Bean & Sun-Dried Tomato Gnocchi Recipe and Chickpea &
+            Potato Curry are nutritious and flavorful dinners you’ll want to make again and again.
+        </p>
+
+
+
+    </section>
+
+    <!--Team-->
+
+    <div class="team">
+        <h1>Special<span>Diets</span></h1>
+
+        <div class="team_box">
+            <div class="profile">
+                <img src="image/white-bean-and-sun-dried-tomato-gnocchi-6735b7da5fd24e66bf70e3da569dad0a.webp">
+
+                <div class="info">
+                    <h3 class="name">Tomato Gnocchi</h3>
+                    <p class="bio">Sun-dried tomatoes are the star of this recipe—providing texture and umami.</p>
+                </div>
+
+            </div>
+
+            <div class="profile">
+                <img src="image/veg.webp">
+
+                <div class="info">
+                    <h3 class="name">Bean-Quinoa Bowl</h3>
+                    <p class="bio">This black bean and quinoa bowl has many of the usual hallmarks of a taco salad,
+                        minus the fried bowl.</p>
+                </div>
+
+            </div>
+
+            <div class="profile">
+                <img
+                    src="image/Anti-inflammatory-lemon-blueberry-smoothies-3x2-035-59d44999473d43ef95705ce15a7b7e89.webp">
+
+                <div class="info">
+                    <h3 class="name">Blueberry Smoothie</h3>
+                    <p class="bio">Lemony smoothie contain antioxidants that can help fight inflammation. If you can’t
+                        find baby kale, baby spinach will work well in its place. </p>
+                </div>
+
+            </div>
+
+            <div class="profile">
+                <img src="image/romaine-salad-with-orange-and-radish-43311e8909b444aba0d356d951262384.webp">
+
+                <div class="info">
+                    <h3 class="name">Fall Salad </h3>
+                    <p class="bio">In 15 minutes or less, you can be enjoying one of these easy and refreshing salads.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!--Menu-->
+
+    <div class="dietmenu" id="Menu">
+        <h1>Special<span>Diets</span></h1>
+
+        <div class="menu_box">
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/Carrot-Cake-Overnight-Oats-3x2-333-2000-335927a946304dbdb41af6a0efcb3145.webp">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart" onclick="favourite_item(this)"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Carrot Cake Overnight Oats</h2>
+                    <p>
+                        These carrot cake overnight oats taste just like the classic dessert—complete with a
+                        frosting-like layer—but with far less added sugar.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/SalmonandVeggieSandwich_Beauty2x3_3643-55c47692df20442dadf2e069bf76d9f2.webp">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart" onclick="favourite_item(this)"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Caprese Sandwich</h2>
+                    <p>
+                        This caprese sandwich is fresh from the basil and hearty from thick, crusty ciabatta. The
+                        sun-dried tomatoes deepen the
+                        flavor. Topping the bread with a layer of basil leaves and using toasted bread helps to keep the
+                        sandwich from getting
+                        soggy.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/Lemon-Blueberry-Overnight-Oats-2x3-4751-de8be822283b4c8ab96f700203f178da.webp">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart" onclick="favourite_item(this)"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Blueberry Overnight Oats</h2>
+                    <p>
+                        These lemon-blueberry overnight oats are layered with creamy oats and a sweet blueberry syrup,
+                        with a garnish of fresh blueberries and lemon zest to bring the flavors together.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img
+                        src="image/Creamy-Roasted-Zucchini-and-Summer-Squash-1x1-249-2000-056e0b5fc47b4f4d9b9fde212542e802.webp">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart" onclick="favourite_item(this)"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Creamy Zucchini</h2>
+                    <p>
+                        The squash is scored, then roasted whole, allowing garlic to seep into the center while a crispy
+                        top forms in the pan. Enjoy it alongside roasted or grilled meat or fish.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/Spanchi.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart" onclick="favourite_item(this)"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Orange Coffee Cake</h2>
+                    <p>
+                        In this orange coffee cake, we swapped the traditional sour cream for tangy yogurt, and swirled
+                        applesauce and orange zest into the batter to give the cake its ultra-plush crumb and bright,
+                        sunny flavor.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img
+                        src="image/Baked-Lemon-Blueberry-Oatmeal-Bars-Beauty-01-2000-a102eedc69e2426d91e26088bf0f8705.webp">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart" onclick="favourite_item(this)"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Blueberry Oatmeal Bars</h2>
+                    <p>
+                        These lemon-blueberry oatmeal bars taste like a hearty bowl of oatmeal that you can hold in your
+                        hands. Each square is bursting with fresh blueberries and infused with lemon zest.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img
+                        src="image/Apple-Pie-Inspired-Overnight-Oats-BG-Beauty-3x2-4038-2000-daba82e38e954ceaaf831a2ac3607ea3.webp">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart" onclick="favourite_item(this)"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Apple Pie-Inspired Oats</h2>
+                    <p>
+                        There's no better way to usher in fall than apple pie-inspired overnight oats in the morning.
+                        Prep and store this easy breakfast ahead of time to have on hand for busy work and school
+                        mornings.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/acai-bowls-200-2-964ae27a8d9c4fbd9fe63d7a02a4bf63.webp">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart" onclick="favourite_item(this)"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Acai Bowl</h2>
+                    <p>
+                        This homemade acai bowl recipe makes for a delicious breakfast any day of the week. Acai can be
+                        very tart, so blending it with banana, coconut water and mixed berries adds sweetness to help
+                        balance the flavors.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/RM_Whipped_Cottage_Cheese_4x3_4897-c71db9f5de614a55a8c3006d0f7fdd74.webp">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart" onclick="favourite_item(this)"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Cottage Cheese</h2>
+                    <p>
+                        This high-protein food is still trending—but it generally packs a lot of sodium.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/roasted-garlic-hummus-a89433f1b81a46eea4c37a00f4fafcdc.webp">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart" onclick="favourite_item(this)"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Roasted Garlic Hummus</h2>
+                    <p>
+                        Two entire heads of garlic might seem like an awful lot to add to a bowl of dip, but don't fear.
+                        When roasted, the pungent cloves mellow out for a rich but not-too-overpowering hummus.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/SalmonandVeggieSandwich_Beauty2x3_3643-55c47692df20442dadf2e069bf76d9f2.webp">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart" onclick="favourite_item(this)"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Cauliflower Sandwich</h2>
+                    <p>
+                        Roasting cauliflower transforms it into a crispy, tender vegetable. A sponge for other flavors,
+                        cauliflower can absorb any spice mix or marinade you add, like this warm and toasty combination
+                        of turmeric, cumin and garlic.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/sandwich.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart" onclick="favourite_item(this)"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Veggie Sandwich</h2>
+                    <p>
+                        Y
+                        Sandwiches come in all shapes and sizes, and there are endless avenues of possibility and
+                        deliciousness. From tuna salad to a classic grilled cheese, sandwiches can be enjoyed at any
+                        time.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!--Gallary-->
+
+    <div class="gallary" id="Gallary">
+        <h1>Our<span>Gallary</span></h1>
+
+        <div class="gallary_image_box">
+            <div class="gallary_image">
+                <img src="image/ZucchiniFetaRollatini-RM-1082-1-1-2000-9d8496fda4b04443b12236966d490fb9.webp">
+
+                <h3>Food</h3>
+                <p>
+                    These zucchini-feta roll-ups are a quick and easy appetizer to pull together, and the recipe is
+                    easily doubled (or tripled!) for a larger gathering.
+                </p>
+            </div>
+
+            <div class="gallary_image">
+                <img src="image/ice-cream.webp">
+
+                <h3>Food</h3>
+                <p>
+                    This gorgeous homemade ice cream is a showstopper, thanks to bold swirls of blueberry syrup that cut
+                    through tart buttermilk-yogurt cream.
+                </p>
+            </div>
+
+            <div class="gallary_image">
+                <img src="image/Almond.webp">
+
+                <h3>Food</h3>
+                <p>
+                    For this healthy smoothie bowl recipe, be sure to use frozen fruit to keep the texture thick, creamy
+                    and frosty.
+                </p>
+            </div>
+
+            <div class="gallary_image">
+                <img src="image/deviled-eggs-with-crabmeat-c1ff22f925ce4b23a6cad2bff5381fb4.webp">
+
+                <h3>Food</h3>
+                <p>
+                    Eggs are a quick, easy and delicious way to help meet our protein needs: two large eggs contain 13
+                    grams of protein. Protein is important for building and maintaining muscle, fighting infections.
+                </p>
+            </div>
+
+            <div class="gallary_image">
+                <img src="image/Cherry-Mocha-Smoothie-de67a6daa0e248f6a8a53cb21d92b38f.webp">
+
+                <h3>Food</h3>
+                <p>
+                    For a fast-paced breakfast on the go, give your blender a whirl. Heart disease doesn't stand a
+                    chance thanks to the healthy fats
+                </p>
+            </div>
+
+            <div class="gallary_image">
+                <img src="image/creamy-sun-dried-tomato-and-spinach-soup-26e9e7659bf84d90a6d4a3816c697127.webp">
+
+                <h3>Food</h3>
+                <p>
+                    Food with a high volume of fiber, food composed of a lot of air and water, and food rich in protein
+                    are typically more filling.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+    <button id="chat" type="button" onclick="location.href='/chatbot.html'"><i
+            class="fa-regular fa-comments"></i></i></button>
+
+    <footer>
+        <h3>HealthFit &copy; 2023</h3>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/e8208fd558.js" crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/diet.js"></script>
+
+
+</body>
+
+</html>

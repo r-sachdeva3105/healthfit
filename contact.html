@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/fevicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <title>HealthFit | Contact Us</title>
+</head>
+
+<body>
+    <header>
+        <p id="title">healthfit.</p>
+        <span class="spacer"></span>
+        <nav>
+            <ul class="menu" id="list">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="service.html">SERVICES</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <button class="login" type="button"><a href="login.html">logout</a></button>
+        <button id="menuBtn" type="button"><i class="fa-solid fa-bars"></i></button>
+    </header>
+    <main>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11531.245869770028!2d-79.60362382176513!3d43.73524326726928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3a5391c12321%3A0x747f0c3b5cdecaa0!2sHumber%20College!5e0!3m2!1sen!2sca!4v1696873238195!5m2!1sen!2sca"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="form">
+            <form id="contact-form">
+                <h2>SEND A MESSAGE</h2>
+                <div class="input">
+                    <input id="name" type="text" name="user_name" placeholder="Name *" required>
+                    <span class="error"></span>
+                </div>
+                <div class="input">
+                    <input id="email" type="email" name="user_email" placeholder="Email *" required>
+                    <span class="error"></span>
+                </div>
+                <div class="input">
+                    <textarea id="message" name="message" placeholder="Message *" required></textarea>
+                    <span class="error"></span>
+                </div>
+                <div class="input"><button id="submit" type="button">SEND</button></div>
+            </form>
+            <div class="alert alert-success" id="hide">Message Sent</div>
+            <hr>
+            <h2>CONNECT</h2>
+            <div class="links">
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div class="mail">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:rajat@sachdeva.com">contact@healthfit.ca</a>
+            </div>
+            <div class="phone">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:847-555-5555">(437) 555-5555</a>
+            </div>
+        </div>
+        <button id="chat" type="button" onclick="location.href='/chatbot.html'"><i
+                class="fa-regular fa-comments"></i></i></button>
+    </main>
+    <footer>
+        <h3>HealthFit &copy; 2023</h3>
+    </footer>
+    <script src="https://kit.fontawesome.com/e8208fd558.js" crossorigin="anonymous"></script>
+    <script src="scripts/contact.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</body>
+
+</html>

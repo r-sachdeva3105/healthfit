@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+
+  <link rel="stylesheet" type="text/css" href="css/extrastyle.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap"
+    rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/style.css">
+
+  <link rel="stylesheet" href="css/bmi.css">
+  <title>BMI Calculator</title>
+</head>
+
+<body class="sub_page about_page">
+  <header>
+    <p id="title">healthfit.</p>
+    <span class="spacer"></span>
+    <nav>
+      <ul class="menu" id="list">
+        <li><a href="">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="service.html">SERVICES</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+    <button class="login" type="button"><a href="login.html">logout</a></button>
+    <button id="menuBtn" type="button"><i class="fa-solid fa-bars"></i></button>
+  </header>
+
+  <!-- BMI Calculator section -->
+  <div class="bmi-container">
+    <div class="calculator">
+      <h1>BMI Calculator</h1>
+      <div>
+        <label for="height">Height (cm): </label>
+        <input type="number" id="height" placeholder="Enter height" required>
+      </div>
+      <div>
+        <label for="weight">Weight (kg): </label>
+        <input type="number" id="weight" placeholder="Enter weight" required>
+      </div>
+      <button onclick="calculateBMI()">Calculate BMI</button>
+      <div id="result"></div>
+    </div>
+
+    <div class="diet_plan">
+      <h3>Special Diet Plan as per Your BMI:</h3>
+      <div id="specialDietPlan">
+        <p>
+        <h4>Underweight:</h4>
+
+        <ul>
+          <li>Focus on nutrient-dense foods to increase calorie intake without relying on empty calories.</li>
+
+          <li> Incorporate healthy fats from sources like avocados, nuts, seeds, and olive oil.</li>
+
+        </ul>
+        </p>
+        <p>
+        <h4>Normal Weight:</h4>
+
+        <ul>
+          <li>Maintain a balanced diet with a variety of fruits, vegetables, whole grains, lean proteins, and healthy
+            fats..</li>
+          <li> Pay attention to portion sizes to avoid overeating..</li>
+
+
+        </ul>
+        </p>
+
+        <p>
+        <h4>Overweight:</h4>
+
+        <ul>
+          <li>Opt for whole, unprocessed foods and limit intake of sugary, processed, and high-fat foods.</li>
+          <li> Increase consumption of fruits and vegetables for added fiber and nutrients.</li>
+
+
+        </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2-top">
+    <div class="container">
+      <div class="info_form">
+        <h4>
+          Our Newsletter
+        </h4>
+        <form action="">
+          <input type="text" placeholder="Enter your email">
+          <div class="d-flex justify-content-end">
+            <button>
+              subscribe
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h6>
+            Team Members:
+          </h6>
+          <ul>
+            <li>Rajat (Team lead)</li>
+            <li>Shrabani</li>
+            <li>Saloni</li>
+            <li>Mitali</li>
+          </ul>
+        </div>
+        <div class="col-md-2 offset-md-1">
+          <h6>
+            Menus
+          </h6>
+          <ul>
+            <li class=" active">
+              <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="">
+              <a class="" href="about.html">About </a>
+            </li>
+            <li class="">
+              <a class="" href="service.html">Services </a>
+            </li>
+            <li class="">
+              <a class="" href="#contactSection">Contact Us</a>
+            </li>
+            <li class="">
+              <a class="" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6>
+            Useful Links
+          </h6>
+          <ul>
+            <li>
+              <a href="">
+                Quotes
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Appointment
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Mood Tracker
+              </a>
+            </li>
+            <li>
+              <a href="">
+                BMI
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Weight Tracker
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6>
+            Contact Us
+          </h6>
+          <div class="info_link-box">
+            <a href="">
+              <img src="images/location-white.png" alt="">
+              <span> 2737 Kipling Avenue, Etobicoke</span>
+            </a>
+            <a href="">
+              <img src="images/call-white.png" alt="">
+              <span>+1 647-822-6861</span>
+            </a>
+            <a href="">
+              <img src="images/mail-white.png" alt="">
+              <span> HealthFit@ByteBuilders.com</span>
+            </a>
+          </div>
+          <div class="info_social">
+            <div>
+              <a href="">
+                <img src="images/facebook-logo-button.png" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img src="images/twitter-logo-button.png" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img src="images/linkedin.png" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img src="images/instagram.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+  <button id="chat" type="button" onclick="location.href='/chatbot.html'"><i
+      class="fa-regular fa-comments"></i></i></button>
+  <!-- footer section -->
+  <section class="container-fluid footer_section ">
+    <p>
+      &copy; 2023 Bytle Builders
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script src="js/bmi.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="https://kit.fontawesome.com/e8208fd558.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/fevicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/chatbot.css">
+    <title>HealthFit | Chatbot</title>
+</head>
+
+<body>
+    <header>
+        <p id="title">healthfit.</p>
+        <span class="spacer"></span>
+        <nav>
+            <ul class="menu" id="list">
+                <li><a href="">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="service.html">SERVICES</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <button class="login" type="button"><a href="login.html">logout</a></button>
+        <button id="menuBtn" type="button"><i class="fa-solid fa-bars"></i></button>
+    </header>
+    <main>
+        <div class="chat-container">
+            <div class="chat-header">
+                <h1>healthfit chatbot</h1>
+            </div>
+            <div class="chat-log" id="chat-log">
+                <div class="bot-message">Hello! How can I assist you?</div>
+            </div>
+            <div class="user-input">
+                <input type="text" id="user-message" placeholder="Type your message..." />
+                <button id="send-button">Send</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3>HealthFit &copy; 2023</h3>
+    </footer>
+    <script src="https://kit.fontawesome.com/e8208fd558.js" crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="scripts/chatbot.js"></script>
+</body>
+
+</html>
